@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/genderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/pluralButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plural"
+        android:layout_below="@id/genderButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/casesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cases"
+        android:layout_below="@id/pluralButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

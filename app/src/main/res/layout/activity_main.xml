@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/nounsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nouns"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/adjectivesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjectives"
+        android:layout_below="@id/nounsButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/pronounsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronouns"
+        android:layout_below="@id/adjectivesButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/verbsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verbs"
+        android:layout_below="@id/pronounsButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
