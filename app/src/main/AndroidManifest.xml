@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SerbianCases">
         <activity
-            android:name=".FallingWordsActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="sensorLandscape">
@@ -23,14 +20,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".RulesActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".GenderActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
             android:name=".NounsActivity"
-            android:screenOrientation="sensorLandscape"></activity>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".NounsGenderActivity"
-            android:screenOrientation="sensorLandscape"></activity>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".StubActivity"
-            android:screenOrientation="sensorLandscape"></activity>
+            android:screenOrientation="sensorLandscape"/>
     </application>
 
 </manifest>

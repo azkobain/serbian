@@ -35,9 +35,9 @@ public class XmlGenderParser {
                         if ("word".equals(tagName)) {
                             currentQuestion = new QuestionGender();
                         } else if ("serb".equals(tagName)) {
-                            currentQuestion.setSerb(parser.nextText());
+                            currentQuestion.setSerbian(parser.nextText());
                         } else if ("rus".equals(tagName)) {
-                            currentQuestion.setRus(parser.nextText());
+                            currentQuestion.setRussian(parser.nextText());
                         } else if ("gender".equals(tagName)) {
                             currentQuestion.setGender(parser.nextText());
                         }

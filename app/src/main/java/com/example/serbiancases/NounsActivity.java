@@ -51,7 +51,7 @@ public class NounsActivity extends AppCompatActivity {
         switch (buttonName)
         {
             case "Gender":
-                intent = new Intent(this, FallingWordsActivity.class);
+                intent = new Intent(this, RulesActivity.class);
                 break;
             default:
                 intent = new Intent(this, StubActivity.class);
