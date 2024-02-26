@@ -35,13 +35,17 @@ public class XmlGenderParser {
                         if ("word".equals(tagName)) {
                             currentQuestion = new QuestionGender();
                         } else if ("serb".equals(tagName)) {
+                            assert currentQuestion != null;
                             currentQuestion.setSerbian(parser.nextText());
                         } else if ("rus".equals(tagName)) {
+                            assert currentQuestion != null;
                             currentQuestion.setRussian(parser.nextText());
                         } else if ("gender".equals(tagName)) {
+                            assert currentQuestion != null;
                             currentQuestion.setGender(parser.nextText());
                         }
                         else if ("points".equals(tagName)) {
+                            assert currentQuestion != null;
                             currentQuestion.setPoints(parser.nextText());
                         }
                         break;
@@ -61,20 +65,5 @@ public class XmlGenderParser {
         }
 
         return questions;
-    }
-
-    private static List<String> parseOptions(XmlPullParser parser) throws IOException, XmlPullParserException {
-        List<String> options = new ArrayList<>();
-
-        int eventType = parser.next();
-
-        while (eventType != XmlPullParser.END_TAG || !"word".equals(parser.getName())) {
-            if (eventType == XmlPullParser.START_TAG && "word".equals(parser.getName())) {
-                options.add(parser.nextText());
-            }
-            eventType = parser.next();
-        }
-
-        return options;
     }
 }

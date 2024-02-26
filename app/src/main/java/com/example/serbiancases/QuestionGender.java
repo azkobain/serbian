@@ -41,7 +41,7 @@ public class QuestionGender {
     }
     public void setPoints(String text)
     {
-        points =  Integer.valueOf(text);
+        points =  Integer.parseInt(text);
     }
     public int getPoints()
     {
